@@ -66,15 +66,7 @@ export default {
       ]
     };
   },
-  watch: {
-    flipTo: {
-      handler(newValue) {
-        if (newValue && this.flipTo !== null) {
-          this.test2();
-        }
-      },
-    },
-  },
+
 }
 </script>
 
