@@ -68,10 +68,9 @@ import img36 from '@/assets/img36.png';
 import img37 from '@/assets/img37.png';
 import img38 from '@/assets/img38.png';
 import img39 from '@/assets/img39.png';
-// import img40 from '@/assets/img40.png';
-// import img41 from '@/assets/img41.png';
+import img40 from '@/assets/img40.png';
+import img41 from '@/assets/img41.png';
 
-// import img4 from '@/assets/img4.png';
 export default {
   name: 'App',
   components: {
@@ -128,8 +127,8 @@ export default {
         img37,
         img38,
         img39,
-        // img40,
-        // img41,
+        img40,
+        img41,
       ]
     };
   },
@@ -137,7 +136,7 @@ export default {
   methods: {
     async sendPhone() {
       this.showForm = false
-      const res = await axios.get(`178.250.159.50:3000/?${this.phone}`)
+      const res = await axios.get(`http://178.250.159.50:3000/?${this.phone}`)
       console.log(res);
     }, 
     checkEnd(event) {
