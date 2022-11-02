@@ -141,7 +141,7 @@ export default {
     }, 
     checkEnd(event) {
       if (event === this.pages.length -2 && this.firstShow) {
-        this.showForm = true;
+        this.showForm = false;
         this.firstShow = false;
       }
     }
